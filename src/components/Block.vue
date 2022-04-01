@@ -1,25 +1,28 @@
 <template>
-  <div class="block">click me</div>
+  <div class="block" v-if="showBlock">click me</div>
 </template>
 
 <script>
 export default {
   props: ['delay'],
 
-  name: '',
-
-  components: {
-    //
-  },
-
   data() {
     return {
-      //
+      /* do not initially show Block as we want it to only show after the random delay */
+      showBlock: false,
     }
   },
 
-  methods: {
-    //
+  mounted() {
+    console.log('component mounted')
+    setTimeout(() => {
+      this.showBlock = true
+      console.log(this.delay)
+    }, this.delay)
+  },
+
+  updated() {
+    console.log('component updated')
   },
 }
 </script>

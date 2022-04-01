@@ -2,7 +2,11 @@
 
 ## What is this about? - ToDo
 - a simple Vue 3 CLI set-up with a reaction timer
-- play button: click it and following display is randomly delayed (calculated with Math.random, a time between 2 and 7 seconds)
+
+## How does it work
+- click the play button
+- after a delay (a time between 2 and 7 seconds, calculated with Math.random) a block appears you should click immediately
+- the time it took you to click that block is measured and displayed
 - this project is only for set-up practicing purposes and only has the bare minimum regarding styling
 
 ## Tech Stack

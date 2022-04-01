@@ -1,24 +1,22 @@
-# vue3-reaction-timer
+# Vue 3 CLI project reaction timer
 
-## Project setup
-```
-npm install
-```
+## What is this about? - ToDo
+- a simple Vue 3 CLI set-up with a reaction timer
+- play button: click it and following display is randomly delayed (calculated with Math.random, a time between 2 and 7 seconds)
+- this project is only for set-up practicing purposes and only has the bare minimum regarding styling
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Tech Stack
+- Vue 3
+- HTML, SCSS, JavaScript
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+## How to run this?
+- clone the repo
+- cd into project
+- `npm install` to prepare the project setup
+- `npm run serve` to compile and hot-reaload for development, this will generally fire up the server at http://localhost:8080/ (or the next availble number)
+- `npm run build` to compile and minify for production
+- `npm run lint` to lint and fix files
+- `control c` to properly stop the server
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

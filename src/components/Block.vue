@@ -1,5 +1,5 @@
 <template>
-  <div class="block" v-if="showBlock" @click="stopTimer">click me</div>
+  <div class="buzzer" v-if="showBlock" @click="stopTimer">hit me</div>
 </template>
 
 <script>
@@ -49,13 +49,25 @@ export default {
 </script>
 
 <style lang="scss">
-.block {
-  background-color: #0faf87;
-  border-radius: 20px;
-  color: #fff;
-  margin: 40px auto;
-  padding: 100px 0;
-  text-align: center;
-  width: 400px;
+.buzzer {
+  align-items: center;
+  background-color: #9df1dc;
+  border-radius: 50%;
+  box-shadow: 0 9px #2c3e50;
+  color: #2c3e50;
+  cursor: pointer;
+  display: flex;
+  font-size: 24px;
+  height: 300px;
+  justify-content: center;
+  margin: 20px auto;
+  width: 300px;
+
+  &:active {
+    background-color: #0faf87;
+    box-shadow: 0 5px #2c3e50;
+    color: #fff;
+    transform: translateY(4px);
+  }
 }
 </style>

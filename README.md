@@ -1,13 +1,25 @@
 # Vue 3 CLI project reaction timer
 
-## What is this about? - ToDo
+## What is this about?
 - a simple Vue 3 CLI set-up with a reaction timer
+- click the play button
+- after a delay (a time between 2 and 7 seconds, calculated with Math.random) a buzzer appears you should click immediately
+- the time it took you to click that buzzer is measured and displayed as a result
 
 ## How does it work
-- click the play button
-- after a delay (a time between 2 and 7 seconds, calculated with Math.random) a block appears you should click immediately
-- the time it took you to click that block is measured and displayed
-- this project is only for set-up practicing purposes and only has the bare minimum regarding styling
+- when the component mounts, it takes a specified delayed time before a green buzzer appears
+- when the green buzzer first shows up, a timer is started, it goes up in incremented 10 milliseconds
+- the time is stored in `reactionTime`
+- click on green buzzer
+- interval is cleared so `reactionTime` will no longer keep going up but will store the time at the point of clicking
+- the result is shown to the user via `results` component
+- we get the data from the `block` component back up to the `app` component via emitting a custom event from the `block` component
+- we listen to that custom event in the `app` component, on the `block` component
+- we call the function attached to it
+- inside that function we are updating the score
+- we stop olaying
+- we output the score
+- so we added a custom event and a callback function to call an emitted event inside of the `app` component
 
 ## Tech Stack
 - Vue 3

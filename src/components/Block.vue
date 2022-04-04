@@ -8,7 +8,7 @@ export default {
 
   data() {
     return {
-      /* do not initially show Block as we want it to only show after the random delay */
+      /* do not initially show Block as we want it to only show after a random delay */
       showBlock: false,
     }
   },
@@ -17,13 +17,16 @@ export default {
     console.log('component mounted')
     setTimeout(() => {
       this.showBlock = true
-      console.log(this.delay)
     }, this.delay)
   },
 
-  updated() {
+  /*   updated() {
     console.log('component updated')
   },
+
+  unmounted() {
+    console.log('unmounted')
+  }, */
 }
 </script>
 

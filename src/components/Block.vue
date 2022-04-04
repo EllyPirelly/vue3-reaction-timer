@@ -1,5 +1,5 @@
 <template>
-  <div class="block" v-if="showBlock">click me</div>
+  <div class="block" v-if="showBlock" @click="stopTimer">click me</div>
 </template>
 
 <script>
@@ -10,23 +10,41 @@ export default {
     return {
       /* do not initially show Block as we want it to only show after a random delay */
       showBlock: false,
+      timer: null,
+      reactionTime: 0,
     }
   },
 
   mounted() {
-    console.log('component mounted')
+    /* console.log('component mounted') */
     setTimeout(() => {
       this.showBlock = true
+      this.startTimer()
     }, this.delay)
   },
 
-  /*   updated() {
+  /* updated() {
     console.log('component updated')
   },
 
+  // will only show when component is taken out of the DOM
+  // uncomment the block component to test this
   unmounted() {
     console.log('unmounted')
   }, */
+
+  methods: {
+    startTimer() {
+      this.timer = setInterval(() => {
+        this.reactionTime += 10
+      }, 10)
+    },
+
+    stopTimer() {
+      clearInterval(this.timer)
+      console.log(this.reactionTime)
+    },
+  },
 }
 </script>
 

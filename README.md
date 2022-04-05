@@ -7,6 +7,12 @@
 - the time it took you to click that buzzer is measured and displayed as a result
 - this project only has the bare minimum regarding styling, focus is on understanding Vue
 
+![reactiontimer-1](./src/assets/screenshots/vue3-reaction-timer-1.png)
+![reactiontimer-2](./src/assets/screenshots/vue3-reaction-timer-2.png)
+![reactiontimer-5](./src/assets/screenshots/vue3-reaction-timer-5.png)
+![reactiontimer-4](./src/assets/screenshots/vue3-reaction-timer-4.png)
+![reactiontimer-3](./src/assets/screenshots/vue3-reaction-timer-3.png)
+
 ## How does it work
 - when the component mounts, it takes a specified delayed time before a green buzzer appears
 - when the green buzzer first shows up, a timer is started, it goes up in incremented 10 milliseconds

@@ -1,10 +1,11 @@
-# Vue 3 CLI project reaction timer
+# Vue 3 CLI - Reaction Timer
 
 ## What is this about?
 - a simple Vue 3 CLI set-up with a reaction timer
 - click the play button
 - after a delay (a time between 2 and 7 seconds, calculated with Math.random) a buzzer appears you should click immediately
 - the time it took you to click that buzzer is measured and displayed as a result
+- this project only has the bare minimum regarding styling, focus is on understanding Vue
 
 ## How does it work
 - when the component mounts, it takes a specified delayed time before a green buzzer appears
@@ -24,6 +25,10 @@
 ## Tech Stack
 - Vue 3
 - HTML, SCSS, JavaScript
+
+## Source
+- [The Net Ninja - Vue JS 3 Tutorial for Beginners #6 - Reaction Timer](https://www.youtube.com/watch?v=bc6czIBLKTg&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1&index=7)
+- [GitHub - result Branch](https://github.com/iamshaunjp/Vue-3-Firebase/tree/lesson-37)
 
 ## How to run this?
 - clone the repo
